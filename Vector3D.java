@@ -21,8 +21,13 @@ public class Vector3D {
         return z;
     }
 
+    @Override
+    public String toString() {
+        return String.format("(%.2f, %.2f, %.2f)", x, y, z);
+    }
+
     public static void main(String[] args) {
-        Vector3D vector = new Vector3D(1.0, 3.0, 1.0);
-        System.out.println("x: " + vector.getX() + ", y: " + vector.getY() + ", z: " + vector.getZ());
+        Vector3D vector = new Vector3D(1.005, 2.276, 3.517);
+        System.out.println("Vector " + vector);
     }
 }
