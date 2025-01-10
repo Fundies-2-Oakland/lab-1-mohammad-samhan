@@ -25,9 +25,4 @@ public class Vector3D {
     public String toString() {
         return String.format("(%.2f, %.2f, %.2f)", x, y, z);
     }
-
-    public static void main(String[] args) {
-        Vector3D vector = new Vector3D(1.005, 2.276, 3.517);
-        System.out.println("Vector " + vector);
-    }
 }
